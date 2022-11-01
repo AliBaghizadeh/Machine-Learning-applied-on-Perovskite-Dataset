@@ -1,1 +1,1 @@
-# ABO3-
+# The purpose of this project is to use machine learning and data visualisation tools to predict properties of the materials. My current project is dedicated to the perovskite materials with general chemcial formula of ABO3. The main source of information in my journey into the application of ML models in matreials science comes from amazing international project and its repositories, materials project. 
