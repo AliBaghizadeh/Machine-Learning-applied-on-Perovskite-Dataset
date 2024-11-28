@@ -86,5 +86,6 @@ The project provides:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Citations
-Antoine Emery, High-throughput DFT calculations of formation energy, stability, and oxygen vacancy formation energy of ABO3 perovskites, [DOI] (https://doi.org/10.6084/m9.figshare.5334142.v1)      
+Antoine Emery, High-throughput DFT calculations of formation energy, stability, and oxygen vacancy formation energy of ABO3 perovskites, 
+[DOI](https://doi.org/10.6084/m9.figshare.5334142.v1)      
 matminer, Materials data mining library, [matminer](https://hackingmaterials.lbl.gov/matminer/)  
