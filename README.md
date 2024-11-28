@@ -49,35 +49,28 @@ cd machine-learning-materials-science
 ```
 ### 2. Set Up the Environment
 Ensure you have Python 3.8 or higher installed. Then, install the required dependencies using pip:
-
-bash 
-```
-Copy code
+```bash 
 pip install -r requirements.txt
 ```
 Or, if using Conda, create an environment:
 
-bash
-```
+```bash
 conda create -n ml-materials python=3.8
 conda activate ml-materials
 pip install -r requirements.txt
 ```
 ### 3. Run the Project
 Run the main script:
-bash
-```
+```bash
 python main.py
 ```
 Alternatively, open and run the Jupyter notebooks in the notebooks/ directory for interactive exploration:
-bash
-```
+```bash
 jupyter notebook
 ```
 ### 4. Run Tests
 To ensure everything works correctly, run the test suite using pytest:
 
-bash
-```
+```bash
 pytest tests/
 ```
