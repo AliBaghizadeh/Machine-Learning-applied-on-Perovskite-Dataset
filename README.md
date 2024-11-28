@@ -12,7 +12,7 @@ The dataset used is from Antoine Emery's work:
 The dataset contains features such as chemical formula, valence states, formation energy, stability, magnetic moment, and band gap.
 
  ## Project Structure
-
+```
  machine-learning-materials-science/    
 │
 ├── data/                        # Store datasets    
@@ -38,12 +38,19 @@ The dataset contains features such as chemical formula, valence states, formatio
 ├── main.py                      # Entry point script   
 ├── README.md                    # Project description and instructions   
 └── LICENSE                      # License (e.g., MIT)     
-
+```
 ## Installation Instructions
 
 ### 1. Clone the Repository
 Open a terminal and clone the repository:
-
+```bash
 git clone https://github.com/username/machine-learning-materials-science.git    
 cd machine-learning-materials-science    
+```
+### 2. Set Up the Environment
+Ensure you have Python 3.8 or higher installed. Then, install the required dependencies using pip:
 
+bash ```
+Copy code
+pip install -r requirements.txt
+```
