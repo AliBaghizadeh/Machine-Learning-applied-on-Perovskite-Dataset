@@ -5,6 +5,7 @@ from sklearn.ensemble import RandomForestClassifier, StackingClassifier, AdaBoos
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import GridSearchCV
+from sklearn.preprocessing import StandardScaler
 
 def log_reg_model(X_train, y_train):
     """Train a logistic regression model with hyperparameter tuning."""
