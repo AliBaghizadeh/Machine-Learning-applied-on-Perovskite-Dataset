@@ -18,21 +18,21 @@ The dataset contains features such as chemical formula, valence states, formatio
 ├── data/                        # Store datasets    
 │   ├── raw/                     # Raw datasets    
 │   ├── processed/               # Processed datasets    
-│
+│             
 ├── notebooks/                   # Jupyter notebooks for exploration and experiments    
 │   ├── data_exploration.ipynb   # EDA and cleaning    
 │   ├── model_training.ipynb     # Training various models    
 │   └── model_evaluation.ipynb   # Evaluation and visualization   
-│
+│           
 ├── src/                         # Source code for reusable scripts    
 │   ├── data_preprocessing.py    # Data loading and cleaning functions    
 │   ├── feature_engineering.py   # Feature extraction and engineering functions    
 │   ├── model_training.py        # Model training and evaluation pipelines   
 │   ├── visualization.py         # Visualization utilities    
-│
+│            
 ├── tests/                       # Unit tests   
 │   └── test_model.py            # Test cases for model pipelines    
-│
+│            
 ├── results/                     # Store results like confusion matrices, evaluation scores    
 ├── requirements.txt             # Python dependencies   
 ├── main.py                      # Entry point script   
