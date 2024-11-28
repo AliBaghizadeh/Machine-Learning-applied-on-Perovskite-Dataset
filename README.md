@@ -74,3 +74,10 @@ To ensure everything works correctly, run the test suite using pytest:
 ```bash
 pytest tests/
 ```
+## Usage
+The project provides:
+
+1- **Data Cleaning and Preprocessing:** Handles missing values, encodes categorical data, and selects numeric features.    
+2- **Model Training:** Trains multiple machine learning models and performs hyperparameter tuning.    
+3- **Visualization:** Generates plots like correlation heatmaps and confusion matrices.    
+4- **Stacking Classifier:** Combines multiple models for improved accuracy.    
