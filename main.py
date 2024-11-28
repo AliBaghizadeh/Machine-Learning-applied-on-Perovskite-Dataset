@@ -1,25 +1,34 @@
-from data_preprocessing import load_data, clean_data, split_features_labels
-from model_training import log_reg_model, random_forest_model
-from visualization import plot_correlation_heatmap
-from feature_engineering import encode_target_variable, select_numeric_features
+from data_preprocessing import load_data, preprocess_data, split_features_labels
+from model_training import train_log_reg, train_random_forest, train_knn, train_ada_boost, train_stacking
 
 def main():
-    """Main function to execute the ML workflow."""
-    # Load data
-    df = load_data('data/HighthroughputDFTcalculations.csv')
-    
-    # Clean data
-    df = clean_data(df)
-    
-    # Feature engineering
-    features, labels = split_features_labels(df, label_col='LowestDist')
-    
-    # Train models
-    log_reg = log_reg_model(features, labels)
-    rf_model = random_forest_model(features, labels)
-    
-    # Visualizations
-    plot_correlation_heatmap(df)
+    # Load and preprocess data
+    file_path = "data/HighthroughputDFTcalculations.csv"
+    df = load_data(file_path)
+    df = preprocess_data(df)
+    features, labels = split_features_labels(df)
 
-if __name__ == '__main__':
+    # Train individual models
+    print("\nTraining Logistic Regression...")
+    log_reg = train_log_reg(features, labels)
+    print(f"Logistic Regression Test Accuracy: {log_reg[3]}")
+
+    print("\nTraining Random Forest...")
+    rf = train_random_forest(features, labels)
+    print(f"Random Forest Test Accuracy: {rf[3]}")
+
+    print("\nTraining K-Nearest Neighbors...")
+    knn = train_knn(features, labels)
+    print(f"KNN Test Accuracy: {knn[3]}")
+
+    print("\nTraining AdaBoost...")
+    ada = train_ada_boost(features, labels)
+    print(f"AdaBoost Test Accuracy: {ada[3]}")
+
+    # Train stacking classifier
+    print("\nTraining Stacking Classifier...")
+    stacking_clf = train_stacking(features, labels)
+    print(f"Stacking Classifier Test Accuracy: {stacking_clf[2]}")
+
+if __name__ == "__main__":
     main()
