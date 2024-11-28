@@ -6,9 +6,9 @@ This project applies machine learning techniques to predict the properties of pe
 ## Dataset
 The dataset used is from Antoine Emery's work:
 
-**Title:** High-throughput DFT calculations of formation energy, stability, and oxygen vacancy formation energy of ABO3 perovskites.
-**DOI:**   10.6084/m9.figshare.5334142.v1
-**Source:** matminer
+**Title:** High-throughput DFT calculations of formation energy, stability, and oxygen vacancy formation energy of ABO3 perovskites.    
+**DOI:**   10.6084/m9.figshare.5334142.v1    
+**Source:** matminer    
 The dataset contains features such as chemical formula, valence states, formation energy, stability, magnetic moment, and band gap.
 
  ## Project Structure
